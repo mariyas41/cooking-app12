@@ -1,0 +1,38 @@
+/* components/recipecard.module.css */
+.recipeCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden; /* Ensure consistent height for all cards */
+}
+
+.recipeImageContainer {
+  height: 200px; /* Set a fixed height for the image container */
+  overflow: hidden; /* Hide any overflow to prevent distortion */
+}
+
+.recipeImage {
+  width: 100%; /* Ensure images fill the width of their container */
+  height: 100%; /* Ensure images fill the height of their container */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+
+.recipeContent {
+  padding: 20px;
+  text-align: center;
+}
+
+.recipeTitle {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.recipeDescription {
+  margin: 0;
+  color: #666;
+}
+
+  
+  
+  

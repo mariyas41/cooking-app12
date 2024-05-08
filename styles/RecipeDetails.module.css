@@ -1,0 +1,37 @@
+/* RecipeDetails.module.css */
+
+.checkbox {
+    /* Hide the default checkbox */
+    position: absolute;
+    opacity: 0;
+  }
+  
+  /* Style for the custom checkbox */
+  .checkbox + label:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    margin-right: 8px;
+    background-color: #fff;
+  }
+  
+  /* Style for the custom checkbox when checked */
+  .checkbox:checked + label:before {
+    background-color: #dd3895; /* Change to #dd3895 when checked */
+  }
+  
+  /* Message after checking all checkboxes */
+  .enjoyMessage {
+    display: none; /* Initially hide the message */
+    color: #dd3895; /* Set color to #dd3895 */
+    font-weight: bold;
+  }
+  
+  /* Show message when all checkboxes are checked */
+  input[type="checkbox"]:checked + label:before + label:last-child .enjoyMessage {
+    display: block;
+  }
+  

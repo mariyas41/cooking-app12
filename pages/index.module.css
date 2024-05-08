@@ -1,0 +1,98 @@
+/* pages/index.module.css */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    gap: 40px; /* Set the gap between cards */
+  }
+ /* login.module.css */
+.loginContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.loginForm button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff4d00;
+  color: #f70c5e;
+  cursor: pointer;
+}
+
+/* register.module.css */
+.registerContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.registerForm input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.registerForm button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff5100;
+  color: #fff;
+  cursor: pointer;
+}
+ 
+  /* index.module.css */
+.searchInput {
+  width: 100%; /* Full-width text field */
+  margin-bottom: 20px; /* Space below the field */
+}
+.whatsapp-share-button {
+  background-color: #25D366;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* Instagram Share Button */
+.instagram-share-button {
+  background-color: #C13584;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Email Share Button */
+.email-share-button {
+  background-color: #DB4437;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+  
