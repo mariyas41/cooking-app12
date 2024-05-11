@@ -16,6 +16,7 @@
     "axios": "^1.6.7",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
+    "mocha": "^10.4.0",
     "mongodb": "^6.5.0",
     "mysql": "^2.18.1",
     "mysql2": "^3.9.3",
@@ -25,6 +26,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-youtube": "^10.1.0",
+    "selenium-webdriver": "^4.20.0",
     "uuid": "^9.0.1"
   }
 }
