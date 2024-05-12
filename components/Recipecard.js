@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './recipecard.module.css';
+import styles from '../components/recipecard.module.css';
 
 const RecipeCard = ({ recipe, onFavoriteToggle }) => {
   const { title, image, description, totalTime, type, isFavorite } = recipe;
