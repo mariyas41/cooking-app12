@@ -1,7 +1,7 @@
 import { MongoClient } from 'mongodb';
 
 // Define the MongoDB URI with parameters appropriate for your application
-const uri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/kraftykitchen?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.1";
+const uri = process.env.MONGODB_URI ||"mongodb+srv://mariyashaji41:SV8B2H8mugpOTMIK@cluster0.unffopv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 // Create a new MongoClient instance without deprecated options
 const client = new MongoClient(uri);
