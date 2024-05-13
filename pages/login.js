@@ -6,13 +6,12 @@ import Router from 'next/router';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [errorMessage, setErrorMessage] = useState(''); // New state for error message
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setErrorMessage(''); // Reset error message on new submission
+    setErrorMessage('');
 
-    // Make POST request to login API route
     const response = await fetch('/api/login', {
       method: 'POST',
       headers: {
@@ -24,13 +23,9 @@ const Login = () => {
     const data = await response.json();
 
     if (response.ok) {
-      // Store session ID in local storage
       localStorage.setItem('session_id', data.sessionId);
-  
-      // Navigate to home and force a full page reload
       window.location.href = '/';
     } else {
-      // Set error message from server response or a default one
       setErrorMessage(data.message || 'Login failed');
     }
   };
@@ -38,7 +33,7 @@ const Login = () => {
   return (
     <div>
       <h1>Login</h1>
-      {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>} {/* Display error message */}
+      {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
       <form onSubmit={handleSubmit}>
         <input 
           type="email" 
@@ -54,7 +49,7 @@ const Login = () => {
           placeholder="Password" 
           required 
         />
-        <button type="submit">Login</button>
+        <button type="submit" style={{ backgroundColor: '#dd3895', color: 'white' }}>Login</button>
       </form>
       <p>Don't have an account? <a href="/register">Register here</a></p>
     </div>
@@ -62,4 +57,3 @@ const Login = () => {
 };
 
 export default Login;
-
